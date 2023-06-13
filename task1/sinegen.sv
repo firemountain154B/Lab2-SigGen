@@ -8,12 +8,12 @@ module sinegen #(
     input logic                 en, 
     input logic [D_WIDTH-1:0]   incr, // increment for address counter
     output logic [D_WIDTH-1:0]  dout
-)
+);
 
     logic [A_WIDTH - 1:0]       address;
     
-counter  #(
-    .W_WIDTH(D_WIDTH)
+counter #(
+    .WIDTH(D_WIDTH)
 )addrCounter(
     .clk(clk),
     .rst(rst),
