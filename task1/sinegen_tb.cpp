@@ -39,7 +39,7 @@ int main(int argc, char **argv, char **env){
         }
         
         vbdPlot(int(top->dout), 0, 255);
-        
+
         if(i != 30){
         top->rst = (i<2)|(i == 15);}
         top->en  = (i>4);
